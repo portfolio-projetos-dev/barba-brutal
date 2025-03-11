@@ -1,98 +1,98 @@
-# barba-brutal
+# 🧔 Barba Brutal
 
-Aplicação para agendamento e gerenciamento de horários em uma barbearia. Desenvolvido com NestJS no backend e Next.js com TypeScript no frontend.
+<div align="center">
+<img src="https://github.com/portfolio-projetos-dev/barba-brutal/raw/main/.gitassets/capa.png" width="350" />
 
-![Tela inicial](.gitassets/1.png)
-![Tela inicial](.gitassets/2.png)
-![Tela inicial](.gitassets/3.png)
+<div data-badges>
+    <img src="https://img.shields.io/github/stars/portfolio-projetos-dev/barba-brutal?style=for-the-badge" alt="GitHub stars" />
+    <img src="https://img.shields.io/github/forks/portfolio-projetos-dev/barba-brutal?style=for-the-badge" alt="GitHub forks" />
+    <img src="https://img.shields.io/github/issues/portfolio-projetos-dev/barba-brutal?style=for-the-badge" alt="GitHub issues" />
+</div>
 
-## 🤔 O que é este projeto
+<div data-badges>
+    <img src="https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/prisma-%232D3748.svg?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
+    <img src="https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+    <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+    <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
+    <img src="https://img.shields.io/badge/jwt-%23323330.svg?style=for-the-badge&logo=json-web-tokens&logoColor=pink" alt="JWT" />
+   <img src="https://img.shields.io/badge/turborepo-%23000000.svg?style=for-the-badge&logo=turborepo&logoColor=white" alt="Turborepo" />
+   <img src="https://img.shields.io/badge/expo-%23000000.svg?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+   <img src="https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white" alt="Yarn" />
+   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React" />
+   <img src="https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+</div>
+</div>
 
-Barba Brutal é uma plataforma desenvolvida para agendamento e gerenciamento de horários em uma barbearia. A aplicação permite que os clientes reservem seus horários de atendimento e que os administradores controlem os agendamentos de forma eficiente, além de gerenciar as informações dos serviços e profissionais.
+A aplicação Barba Brutal é uma plataforma desenvolvida para otimizar o gerenciamento de agendamentos em barbearias. A aplicação permite que os clientes agendem atendimentos de forma prática e rápida, escolhendo os serviços desejados, horários disponíveis e garantindo uma experiência personalizada e eficiente para todos os envolvidos.
 
-## 🖥️ Como rodar este projeto
+A aplicação oferece uma interface moderna e intuitiva, possibilitando que os clientes naveguem facilmente pelo sistema de agendamento (tanto na versão mobile quanto na versão web) selecionem os serviços que desejam realizar, como cortes de cabelo, barbas ou pacotes combinados, e escolham o horário que melhor se adequa à sua rotina.
 
-**Requisitos**:
+Para os barbeiros, a plataforma proporciona um painel exclusivo onde é possível visualizar todos os agendamentos do dia, organizados de forma clara e detalhada. Isso permite que o profissional gerencie seu tempo de maneira eficiente, garantindo um atendimento de qualidade para cada cliente.
+
+## 🖥️ Como rodar este projeto 🖥️
+
+### Requisitos:
 
 - Node.js instalado
 - PostgreSQL configurado
-- Docker (opcional, para ambiente conteinerizado)
+
+### Execução:
 
 1. Clone este repositório:
 
-```sh
-git clone https://github.com/seu-repositorio/barba-brutal.git
-```
+   ```sh
+   git clone https://github.com/portfolio-projetos-dev/barba-brutal.git
+   ```
 
 2. Acesse o diretório do projeto:
 
-```sh
-cd barba-brutal
-```
+   ```sh
+   cd barba-brutal
+   ```
 
-3. Instale as dependências:
+3. Instale as dependências com o comando a seguir na pasta raiz do projeto:
 
-```sh
-npm install
-```
+   ```sh
+   yarn install
+   ```
 
-4. Configure as variáveis de ambiente:  
-   Crie um arquivo .env baseado no .env.example e preencha com as credenciais do banco de dados e demais configurações.
+4. Configure as variáveis de ambiente:
 
-5. Execute as migrações do banco:
+   Será necessário criar um arquivo `.env` com as mesmas variáveis de ambiente listadas no arquivo `.env.example` nas pastas `apps/frontend`, `apps/backend` e `apps/mobile`. Cada um desses arquivos deverá ser preenchido com as variáveis de ambiente correspondentes e exemplificadas no arquivo `env.example` de cada pasta.
 
-```sh
-npx prisma migrate dev
-```
+5. Execute as migrações do banco rodando o comando a seguir na pasta prisma que se localiza dentro da pasta `app/backend`:
 
-6. Inicie o servidor backend (NestJS):
+   ```sh
+   npx prisma migrate dev
+   ```
 
-```sh
-npm run start:dev
-```
+6. Inicie a aplicação rodando o comando `yarn dev` na pasta raiz da sua aplicação. Esse comando iniciará todos os projetos da sua aplicação.
 
-7. Inicie o frontend (Next.js):
+7. Acesse o projeto web em [http://localhost:3000](http://localhost:3000) e o projeto mobile através do emulador que será aberto automáticamente.
 
-```sh
-npm run dev
-```
-
-8. Acesse o projeto em [http://localhost:3000](http://localhost:3000).
-
-## 🗒️ Features do projeto
+## 🗒️ Features do projeto 🗒️
 
 - Agendamento e gerenciamento de horários online
-- Criação de cadastro para clientes e profissionais
+- Cadastro para clientes
 - Controle de serviços oferecidos e valores
-- Notificações de agendamento
+- Escolha de profissionais e serviços a serem prestados
+- Versões Web e Mobile
+- Painel administrativo para barbeiros
 
-## 💻 Tecnologias usadas no projeto
+![](https://github.com/portfolio-projetos-dev/barba-brutal/raw/main/.gitassets/1.png)
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 10px; align-items: center;">
-<img src="https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
-<img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-<img src="https://img.shields.io/badge/prisma-%232D3748.svg?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma" />
-<img src="https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS" />
-<img src="https://img.shields.io/badge/jwt-%23323330.svg?style=for-the-badge&logo=json-web-tokens&logoColor=pink" alt="JWT" />
-</div>
+![](https://github.com/portfolio-projetos-dev/barba-brutal/raw/main/.gitassets/2.png)
 
-## ⚙️ Sobre o desenvolvimento desse projeto
+![](https://github.com/portfolio-projetos-dev/barba-brutal/raw/main/.gitassets/3.png)
 
-Este projeto fullstack foi desenvolvido com uma arquitetura que separa claramente o frontend e o backend, garantindo uma comunicação eficiente entre as camadas.
-
-- **Frontend**: Desenvolvido com Next.js, proporcionando uma experiência dinâmica e responsiva.
-- **Backend**: Construído com NestJS, que oferece escalabilidade e robustez na criação da API.
-- **Banco de dados**: Utiliza PostgreSQL, com migrations e modelos gerenciados pelo Prisma.
-
-A utilização de Docker é opcional e permite a execução do ambiente de forma conteinerizada, facilitando a integração e o deploy.
-
-## 💎 Links úteis
+## 💎 Links úteis 💎
 
 - [Next.js](https://nextjs.org/docs)
 - [NestJS](https://docs.nestjs.com/)
 - [Prisma](https://www.prisma.io/docs)
 - [PostgreSQL](https://www.postgresql.org/docs/)
 - [Tailwind CSS](https://tailwindcss.com/docs)
+- [Expo](https://expo.dev)
